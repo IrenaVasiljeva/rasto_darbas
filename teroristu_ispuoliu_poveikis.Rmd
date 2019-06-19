@@ -1,0 +1,132 @@
+---
+title: "Teroristinių išpuolių poveikis Egipto ekonomikai"
+author: "Irena Vasiljeva"
+date: '2019-06-19'
+output:
+  pdf_document: default
+  word_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, error = TRUE, warning = FALSE, message = FALSE)
+```
+
+# **Įžanga**
+
+Terorizmas yra taktika arba strategija, kurią ekstremistinės grupės ar žmonės naudoja siekdami tikslo. Šiuolaikiniame gyvenime ši strategija tapo neišvengiama, ypač todėl, kad marginalizuotos arba silpnesnės žmonių grupės pradeda kovoti su galingomis tautinėmis valstybėmis. Todėl neturėtų stebinti, kad Egiptas, viena iš galingiausių Afrikos ir už jos ribų esančių šalių valstybė, buvo pastarųjų trijų dešimtmečių teroristų išpuolių centras. Dauguma teroristinių išpuolių Egipte išauga iš daugialypių konfliktų ir tai daro poveikį Sinajaus pusiasalyje. Neseniai įvykę teroristiniai išpuoliai Egipte sukėlė neišmatuojamą poveikį šalies ekonomikai, politinei sričiai ir pan. Šiame darbe bus trys poskyriai, susidedantys iš skirtingų klausimų, kurie aptaria terorizmo poveikį Egipte, analizuoja, kaip terorizmas paveikė Egipto turizmo sektorių, išsiaiškina teroristų taktiką bei tikslus, taip pat įvertina, kaip Egiptas kovoja su terorizmu ir ką jis daro, kad išlaikytų ekonomikos augimo tempą dėl teroristinių išpuolių.
+
+# **Dėstymas**
+
+**<i>Kokia yra turizmo svarba Egipte ir kokią įtaką terorizmas daro turistų srautams bei šalies BVP?</i>**
+
+  Egiptas yra vienas iš ryškiausių turistų centrų pasaulyje, nes jame yra daugybė turistų traukos vietų ir istorinių paminklų, todėl turizmas yra vienas svarbiausių šalies sektorių. Pagal apibrėžimą, turizmas - tai žmonių judėjimas iš vienos vietos (ar regiono) į kitą laisvalaikio, gydymo, poilsio tikslais bei dėl kitų priežasčių. Todėl Egipte yra keletas turizmo formų, tačiau labiausiai paplitę yra kultūros turizmas, medicinos turizmas, religinis turizmas ir kiti.
+
+  Jau nuo seniausių laikų Egiptas yra gerai žinomas kaip daugelio keliautojų ir turistų paskirties centras. Egiptas neabejotinai išlaikė savo įvaizdį kaip turizmo centrą viduramžiais ir, svarbiausia, šiuolaikinėje Egipto istorijoje. Be to, senovėje faraonų atradimas Egiptui suteikė naudą kaip turizmo traukos centrą. Ši ypatinga nauda papildoma su šalies unikalumu religinėje praktikoje ir kultūros paminkluose. Tai yra keletas veiksnių, dėl kurių Egiptas yra palankioje vietoje, suteikdamas konkurencinį pranašumą, kiek tai susiję su turizmu ne tik Afrikoje, bet ir visame pasaulyje. Todėl neturėtų stebinti, kad W. Hazbun teigia: „2007 metais Egiptas buvo antras geriausias turistinių vietų Artimuosiuose Rytuose Persijos įlankos skatinimo verslo kelionių ir susitikimų parodoje“.
+  
+  Kasmet turistai, iš daugelio pasaulio vietų, bet visų pirma iš Europos, vyksta į Egiptą. Todėl nacionalinei vyriausybei sukaupiama didžiulė pajamų suma. Pavyzdžiui, per pastarąjį dešimtmetį Egipto nacionalinė ekonomika didėjo, todėl ji tapo viena iš sparčiausiai augančių ekonomikų ne tik Afrikoje, bet ir visame pasaulyje. Turimi statistiniai duomenys rodo, kad Egipto turizmo sektorius sudaro daugiau kaip 11,3 proc. visos šalies bendrojo vidaus produkto (BVP) ir daugiau nei 40 proc. viso Egipto ne prekių eksporto, taip pat 19,3 proc. šalies užsienio valiutos pajamų, dėka tiesioginių užsienio investicijų. Todėl tai yra pagrindinės priežastys, dėl kurių turizmas yra labai svarbus Egipto ekonomikos augimo ir vystymosi sektorius, nes jis daro teigiamą poveikį darbo vietų kūrimui (arba užimtumui), pajamoms, prisidedant prie papildomo ekonomikos augimo, užsienio valiutos keitimo ir taip toliau. Egipto BVP pokytis nuo 2009 iki 2017 metų atvaizduotas lentelėje.
+  
+```{r, echo=FALSE}
+BVP=c(189, 218.9, 236, 279.4, 288.6, 305.5, 332.7, 332.9, 235.37)
+Metai=c(2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017)
+```
+
+```{r echo=FALSE, warning=FALSE}
+z <- data.frame(Metai=c(2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017),
+                BVP=c(189, 218.9, 236, 279.4, 288.6, 305.5, 332.7, 332.9, 235.37))
+library(kableExtra)
+z %>%
+  kable(caption = "Egipto BVP") %>%
+  kable_styling(c("striped", "bordered"))%>%
+  footnote(general = "Lentelės pastabos:",
+           number = c("Šaltinis: Trading Economics;","BVP atvaizduotas JAV doleriais (mldr);", "Duomenys iš Trading Economics surinkti rankiniu būdu, kadangi svetainė prašo susikurti paskyrą mokant pinigus, kad gauti duomenis." ),
+           general_title = "") 
+```
+
+
+  Tačiau per pastaruosius kelis dešimtmečius Egiptas buvo geras taikinys ekstremistams, kur teroristų grupės užpuolė tam tikrus regionus ar turizmo centrus, o tai pakenkė šalies ekonomikai, nes dauguma naujausių teroristinių išpuolių buvo nukreipti į turistus. „Reuters“, viena iš didžiausių agentūrų pasaulyje, kuri platina naujienas bei rinkų duomenis 94 šalyse, nurodo, kad Sinajaus kovotojai nebėra nukreipti į Egipto saugumo pajėgas, o atvirkščiai, kad dabar jie nukreipė savo išpuolius į turistus ir civilius. Pavyzdžiui, vienas iš mirtingiausių teroristų išpuolių prieš turistus įvyko 2014 metais, kai buvo aptiktas autobusas, vežančius Pietų Korėjos bažnyčios grupės narius, kurie atvyko aplankyti Šv. Kotrynos vienuolyno, turizmo teritoriją Sinajaus pusiasalyje. 2014 metais autobuso bombardavimas, kurį surengė kariuomenės grupė, baigėsi mažiausiai 3 žmonių mirtimi. Šios atakos pasekmės sulaukė nemažai kelionių patarimų iš kelių pasaulio šalių, ypač iš Didžiosios Britanijos vyriausybės, konsultuojančios savo piliečius ir rekomenduojančios sustabdyti apsilankymą pietinėse Sinajaus pusiasalio dalyse. Šis veiksnys turėjo tiesioginį poveikį Egipto ekonomikai.
+  
+  Turimi duomenys rodo, kad nuo 2003 metų teroristiniai išpuoliai išaugo daugiau nei 7 kartus, o tai yra iki šiol nepaprastai didelis šuolis šiuolaikinei Egipto istorijai. Pavyzdžiui, remiantis Egipto terorizmo indeksu, per pastaruosius 15 metų terorizmas vidutiniškai buvo 4,58. Šie teroristiniai išpuoliai 2017 metais pasiekė aukščiausią lygį - 7,35, palyginti su 2003 m. 0,04 - žemiausiu terorizmo indeksu, kurį Egiptas užfiksavo savo istorijoje. Išsamus statistinis šių teroristinių išpuolių Egipte suskirstymas pateikiamas grafiškai.
+  
+```{r, echo=FALSE}
+x=c(2009,2010,2011,2012,2013,2014,2015,2016,2017)
+y=c(3.33,2.75,4.57, 4.88,6.34,6.81,7.33,7.17,7.35)
+```
+
+```{r dat, echo=FALSE}
+dat <- data.frame(x=c(2009,2010,2011,2012,2013,2014,2015,2016,2017),
+                  y=c(3.33,2.75,4.57, 4.88,6.34,6.81,7.33,7.17,7.35))
+library(ggplot2)
+
+ggplot(dat, aes(x=x, y=y,))+
+geom_bar(stat = "identity",
+         fill="steelblue")+
+  geom_text(aes(label=y, vjust=-0.5))+
+  labs(title="Egipto terorizmo indeksas, 2009-2017",
+       subtitle="Šaltinis: Trading Economics",
+        x="Metai",
+        y="Indeksas")+
+scale_x_continuous(breaks = c(2010, 2012, 2014, 2016))+
+scale_y_continuous(breaks = c(0,1,2,3,4,5,6,7,8))
+```
+
+
+**<i>Kokie yra teroristų tikslai ir taktika, kai jie atakuoja Egiptą?</i>**
+
+  Padažnėję ir ilgesni nei anksčiau teroristų išpuoliai prieš turistus Egipte iškelia klausimą: ko nori teroristai? Šiuolaikiniame amžiuje teroristai naudojasi aukštosiomis technologijomis, kad galėtų skleisti neapykantą, taip pat siųstų grėsmingus pranešimus beveik visai pasaulio daliai. Dažniausiai teroristų grupės naudoja socialinę žiniasklaidą, kad įbaugintų žmones. Nėra jokio kito klausimo, kuris galėtų būti svarbesnis, nei ko nori teroristai iš taikių žmonių, kovojant už veiksmingesnę kovą su terorizmu bei strategijų kūrimą ne tik Egipte, bet ir visame pasaulyje. 
+
+  Egipto terorizmas išlieka viena iš pastoviausių ir baisiausių grėsmių Egipto turizmo sektoriuje. Nusikaltėlių ir kai kurių teroristų grupuočių, pavyzdžiui, Sinajaus ginkluotųjų pajėgų, motyvai vystosi perspektyvose. Jie reikalauja laivybos išteklių gabenimo ne tik greitai, bet ir lanksčiai. Vis dėlto, Egipto saugumo pajėgos turi pranašumą - geresnę prieigą prie sudėtingiausių šiuolaikinių ginklų. Deja, nepaisant to, kad Egipto saugumo pajėgos yra laikomi ne tik Afrikos, bet ir pasaulio elitinėmis pajėgomis, iki šiol jie dar nėra veiksmingai nugalėję Sinajaus teroro grupių tarp kitų ekstremistinių grupių, kurios kelia grėsmę nacionaliniam saugumui, ypač dabar, kai turistai ir turizmo objektai/centrai tampa lengvais teroristų taikiniais.
+  
+  Yra naujų teroristų, kurie tiesiog domisi žudyti turistus ir neleidžia Egiptui turėti gero saugumo ateityje. Pavyzdžiui, tokios teroristinės grupės kaip  „Harakat Sawa‘d Misr“ (HASM), tarp kitų Sinajaus teroro grupių, kurios ilgą laiką išliko nuolatinės ir neseniai perėjo nuo bendradarbiavimas su Egipto saugumo pajėgomis į tai, kad galėtų nužudyti civilinius gyventojus, o dėmesį į tokį rimtą žingsnį atkreipė visas pasaulis. Taip yra todėl, kad metodai ar taktika, kurią šie teroristai naudoja, yra painūs ir gerai įvykdyti. Pavyzdžiui, taktika/metodai, kuriuos grupės naudoja savo veiksmams vykdyti, apima improvizuotus sprogstamuosius prietaisus, tikslinius nužudymus, sudėtingus užpuolimus, kuriuose dalyvauja dešimtys teroristų bei pagrobimus, naudojant transporto priemonę. Pavyzdžiui, 2017-ieji buvo neabejotinai vieni iš žiauriausių metų, kai šios teroristinės grupės pradėjo daugiau teroristinių išpuolių. Puikus pavyzdys dėl šių išpuolių įvyko Sifo šiaurinėse dalyse esančioje Sufi mečetėje, kur teroristinės grupės nužudė daugiau kaip 300 civilių, todėl tapo nežmoniškiausiu teroristiniu išpuoliu neseniai įvykusioje istorijoje ne tik Egipte, bet ir pasaulyje.
+  
+  Kaip matyti iš neseniai atliktų tyrimų, teroristai turi visuotinį ryšį bei lengvą prieigą. Taigi jie gali turėti aukštą kvalifikacijos lygį su sudėtingesniais ginklais bei turėti gerai apgalvotas taktikas. Tai yra pagrindinė priežastis, dėl kurių terorizmo taktikų ir tikslų tyrimai išliko nepakitę. Būtent šioje srityje reikia atlikti daugiau mokslinių tyrimų, kad būtų galima daugiau sužinoti apie teroristų taktiką Egipte ir kaip apsaugos pajėgos per ilgą laiką nesugebėjo įveikti teroristų, net ir tada, kai tarptautinė bendruomenė nusprendė įsipareigoti kovoti su terorizmu ir kovoti su juo po to, kai įvyko rugsėjo 11-osios atakos. Būtent per rugsėjo 11-ąją žuvo apie 3000 žmonių ir daugiau nei 6000 buvo sužeisti, kai užgrobti lėktuvai trenkėsi į dangoraižius. Nepaisant to, vienas iš naujausių straipsnių, paskelbtų Tarptautinio saugumo žurnale apie terorizmą, teigia, kad faktiniai teroristinio elgesio įrašai nebeatitinka strateginio modelio ir teigia, kad pagrindinis teroristų tikslas yra veikti racionaliai, kad jie galėtų pasiekti politinius tikslus.
+
+**<i>Kaip Egiptas kovoja su terorizmu ir kokios šalys ar organizacijos padeda pakelti Egipto ekonomiką ir kaip?</i>**
+
+  Vien tik 2017 metais Egiptą nustebino daugybė teroristinių išpuolių, kurie pareikalavo šimtų nekaltų civilių ir turistų gyvybių. Tai privertė Egipto parlamentą priimti teisės aktus, kurie palengvino baudžiamąjį persekiojimą visais su terorizmu susijusiais atvejais šalyje ir kitomis griežtomis kovos su terorizmu priemonėmis. Be to, pagal Jungtinių Valstijų valstybės departamento 2018 metais paskelbtą ataskaitą apie 2017 metus šalies ataskaitas apie terorizmą: „Egiptas - kaip Pasaulinės koalicijos, nugalėti islamo organizaciją ISIS narį, šalis, kuri nepasidavė matydama padidėjusius teroro išpuolius. Vyriausybė ir toliau plečia pastangas kovoti su visuotiniais terorizmo finansuotojais.“ Todėl Egiptas, be saugumo pajėgų panaudojimo kovojant su terorizmu šalyje ir už jos ribų, priėmė šį naują teisės aktą, kartu stiprindamas savo sienų saugumą, stengdamasis kovoti su terorizmu.
+
+  Egiptas yra neatsiejamas nuo šalies kultūros paveldo, bet kad tai taptų svarbiu šalies ūkio turtu, jis kasmet sukuria milijonus darbo vietų egiptiečiams, kad šie galėtų konsultuoti arba aptarnauti turistus. Tai tampa vienu patikimiausiu pajamų šaltiniu daugeliui žmonių. Deja, kai įvyksta teroristiniai išpuoliai, dėl šių antikvarinių paminklų, tai reiškia, kad žmonės gali lengvai prarasti šias darbo vietas ir nekalbant apie poveikį, kurį šie įvykiai galėtų sukelti nacionalinei ekonomikai. Kad būtų išvengta tokio ekonominio kritimo, Egipto vyriausybė glaudžiai bendradarbiauja su kitomis pasaulio šalimis. Visų pirma su JAV, kad šalies turizmo sektoriui būtų suteiktas naujas gyvenimas ir padidintas ekonominis pajamų srautas, kuriant darbo vietas, didinant turizmą ir kita.
+  
+  Jau nuo 1995 metų JAV vyriausybė per JAV Tarptautinės vystymosi agentūrą suteikė Egiptui pagalbą, kuri yra didesnė nei 100 milijonų JAV dolerių, kad Egipto vyriausybė galėtų išsaugoti reikšmingus paminklus. Ypač tuos, kurie yra nuo faraonų laikų iki vėlyvo Osmanų laikotarpio. Nepaisant to, kad Egipte įvyko daugybė teroristinių išpuolių, šalies turizmo sektorius sudaro beveik 13% Egipto ekonomikos, o galimybės įsidarbinti šalyje išliko tos pačios. Be to, nėra abejonių, kad teroristiniai išpuoliai galėtų būti sumažinti. Egipto turizmo sektorius tikisi dar labiau padidinti užimtumo galimybes, ypač tiems, kurie gyvena netoli senovinių vietų. Tai yra priežastis, dėl kurios pritraukia projektų finansavimą iš skirtingų pasaulio šalių, kad šios senovės vietos būtų tinkamai prižiūrimos, nes jos yra ne tik prestižinis kultūros paveldo šaltinis, bet ir nepakeičiami užimtumo šaltiniai. Jie taps Egipto nacionalinės ekonomikos pagrindu. Kuo daugiau turistų atkeliauja, tuo daugiau vyriausybė gauna pajamų ir taip plečiasi šalies ekonomikos augimas bei plėtra.
+  
+# **Išvada**
+
+  Turizmas Egiptui yra svarbiausias pajamų ir užimtumo šaltinis šalyje. Todėl Egipto turizmo sektorius yra nepaprastai svarbus Egipto ekonomikai ir jos ekonominiam augimui bei vystymuisi. Tačiau teroristiniai išpuoliai prieš civilius ir turistus, kurie yra nenuspėjami, privertė susimąstyti, kaip spręsti šią problemą. Egipto saugumo pajėgos turėjo ir vis dar turi gebėjimų veiksmingai kovoti su nusikalstamumu visame Sinajaus pusiasalyje. Vis dėlto, pažeidimų nemažėja, nes atsiranda vis daugiau teroro grupių. Tokios pavojingos grupės, kaip ISIS filialai, jau dešimtmečius užima tą regioną bei kelia grėsmę šalies turizmo centrams.
+  
+  Dėl padidėjusių teroristinių išpuolių, prieš užsienio žmones, lankančius didžiąją dalį Egipto senovės vietų, vis dažniau žiniasklaidoje išgirstami patarimai ten nevykti. Egiptas ir toliau registruoja mažiau turistų aplankiusių jų šalį. Turistų baimės keliauti dėl saugumo problemų didėja. Todėl vienintelis būdas, kuris padėtų Egipto ekonomikai išlikti tokiai pat arba didėti, yra atkurti naują kovos su terorizmu strategiją ne tik Egipte, bet ir kaimyninėse šalyse, kad šalis būtų užtikrinta nuosekliu turizmo srautu į šalį. Taip pat, kad būtų sustiprintas bendras saugumas apsaugoti civilius, nes neseniai įvykę teroristiniai išpuoliai parodė, kad teroristai dabar dažniau nukreipia savo atakas į ten gyvenančius žmones. 
+  
+# **Literatūros sąrašas:**
+  
+1. Hazbun, W. (2009). Explaining the Arab Middle East Tourism Paradox. Arab World 
+Geographer, 9(3). 
+
+2. Chinadaily.com. (Rugpjūčio 24, 2009). Tourism of Egypt. Žiūrėta: 2019-06-15, 
+*http://www.chinadaily.com.cn/hellochina/egyptambassador09/2009-08/24/content_8608649.htm*
+
+3. Horton, M. (2017). Crossing the Canal: Why Egypt Faces a Creeping Insurgency. Žiūrėta: 2019-06-15, *https://ctc.usma.edu/crossing-the-canal-why-egypt-faces-a-creeping-insurgency/*
+
+4. Trading Economics. "Egypt Terrorism Index.” Žiūrėta: 2019-06-17, *https://tradingeconomics.com/egypt/terrorism-index*
+
+5. Trading Economics. "Egypt GDP” Žiūrėta: 2019-06-17, *https://tradingeconomics.com/egypt/gdp*
+
+6. United States Department of State (Rugsėjo 19, 2018). Country Reports on Terrorism 2017 – 
+Egypt. Žiūrėta: 2019-06-18, *https://www.refworld.org/docid/5bcf1fa913.html*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
